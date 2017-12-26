@@ -1,6 +1,4 @@
-# play-scala-chatroom-example
-
-[<img src="https://img.shields.io/travis/playframework/play-scala-chatroom-example.svg"/>](https://travis-ci.org/playframework/play-scala-chatroom-example)
+# play-scala-messaging-app
 
 This is a simple chatroom using Play and Websockets with the Scala API.
 
