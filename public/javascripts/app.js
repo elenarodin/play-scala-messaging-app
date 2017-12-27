@@ -4,7 +4,7 @@ $( document ).ready(function() {
     } else {
     	console.log("WebSocket NOT supported by your Browser!");
     	return;
-    }	
+    }
 	var getScriptParamUrl = function() {
 	    var scripts = document.getElementsByTagName('script');
 	    var lastScript = scripts[scripts.length-1];
@@ -20,13 +20,13 @@ $( document ).ready(function() {
 		connection.send(name+": "+text);
 	};
 
-	var $messages = $("#messages"), $send = $("#send"), $message = $("#message"); 
-	
+	var $messages = $("#messages"), $send = $("#send"), $message = $("#message");
+
 	var url = getScriptParamUrl();
 	var connection = new WebSocket(url);
 
 	$send.prop("disabled", true);
-		
+
 	connection.onopen = function() {
 		$send.prop("disabled", false);
 //		$messages
@@ -46,7 +46,7 @@ $( document ).ready(function() {
 		$messages.append($("<li style='font-size: 1.5em'>" + event.data + "</li>"))
 	}
 
-	console.log( "chat app is running!" );	
+	console.log( "chat app is running!" );
 });
 
 
@@ -86,3 +86,8 @@ $(document).on('click', '.icon_close', function (e) {
     //$(this).parent().parent().parent().parent().remove();
     $( "#chat_window_1" ).remove();
 });
+
+
+
+//// scaledrone
+
